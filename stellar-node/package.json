@@ -1,0 +1,11 @@
+{
+  "name": "fortress-stellar",
+  "version": "1.0.0",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "stellar-sdk": "^10.4.1",
+    "cors": "^2.8.5",
+    "node-fetch": "^2.6.7"
+  }
+}

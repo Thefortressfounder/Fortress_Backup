@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Founder's Decree | THE FORTRESS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            background: #050505; 
+            color: #ffffff; 
+            font-family: 'Inter', sans-serif; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0; 
+            background-image: radial-gradient(circle at center, #111 0%, #050505 100%);
+        }
+        .decree-box { 
+            max-width: 700px; 
+            padding: 60px; 
+            border: 1px solid rgba(255, 215, 0, 0.2); 
+            background: rgba(10, 10, 10, 0.8);
+            backdrop-filter: blur(10px);
+            text-align: center;
+            box-shadow: 0 0 40px rgba(0,0,0,0.8);
+        }
+        h1 { 
+            font-family: 'Cinzel', serif;
+            font-size: 2.2rem;
+            letter-spacing: 5px;
+            color: #FFD700; /* Gold accents for the Founder's name and title */
+            margin-bottom: 30px;
+        }
+        .promise-text { 
+            font-size: 1.1rem;
+            line-height: 2;
+            color: #ccc;
+            text-align: justify;
+            margin-bottom: 40px;
+            border-left: 2px solid #FFD700;
+            padding-left: 25px;
+        }
+        .signature-block {
+            margin-bottom: 50px;
+        }
+        .founder-name {
+            font-family: 'Cinzel', serif;
+            font-size: 1.4rem;
+            display: block;
+            color: #fff;
+        }
+        .founder-title {
+            font-size: 0.8rem;
+            letter-spacing: 3px;
+            color: #FFD700;
+            text-transform: uppercase;
+        }
+        .enter-btn { 
+            background: transparent; 
+            color: #FFD700; 
+            padding: 18px 50px; 
+            border: 1px solid #FFD700; 
+            font-weight: 700; 
+            cursor: pointer; 
+            text-transform: uppercase; 
+            letter-spacing: 3px;
+            transition: all 0.4s ease;
+        }
+        .enter-btn:hover { 
+            background: #FFD700; 
+            color: #000; 
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="decree-box">
+        <h1>THE FOUNDER'S DECREE</h1>
+        <div class="promise-text">
+            "I, James Lambert, establish this Fortress as a pillar of integrity in the digital age. I give my word to every user: transparency is our law, and accountability is my promise. Your assets are secured by the Phoenix, and I stand personally responsible for the sanctuary we build here together."
+        </div>
+        <div class="signature-block">
+            <span class="founder-name">James Lambert</span>
+            <span class="founder-title">Founder of The Fortress</span>
+        </div>
+        <button class="enter-btn" onclick="window.location.href='/register'">Enter The Fortress</button>
+    </div>
+</body>
+</html>

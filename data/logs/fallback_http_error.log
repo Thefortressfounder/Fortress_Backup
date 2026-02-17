@@ -1,0 +1,1 @@
+2026/02/11 21:54:02 [error] 198#198: *2989 open() "/var/www/html/sitemap.xml" failed (2: No such file or directory), client: 162.142.125.46, server: localhost-nginx-proxy-manager, request: "GET /sitemap.xml HTTP/1.1", host: "72.60.226.84"

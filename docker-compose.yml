@@ -1,0 +1,40 @@
+version: '3.8'
+services:
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/conf:/etc/nginx/conf.d
+    depends_on:
+      - frontend
+      - ufos-engine
+
+  ufos-engine:
+    build: ./ufos
+    environment:
+      - STELLAR_NETWORK=public
+      - CVT_ASSET_CODE=CVT
+      - ALFRED_URL=http://alfred:11434
+    networks:
+      - phoenix-net
+
+  alfred:
+    image: ollama/ollama
+    volumes:
+      - ollama_data:/root/.ollama
+    networks:
+      - phoenix-net
+
+  frontend:
+    build: ./frontend
+    networks:
+      - phoenix-net
+
+networks:
+  phoenix-net:
+    driver: bridge
+
+volumes:
+  ollama_data:
