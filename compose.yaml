@@ -1,8 +1,10 @@
 services:
-  fortressbackup:
-    image: fortressbackup
+  fortressui:
+    image: fortressui
     build:
-      context: .
+      context: frontend
       dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
     ports:
-      - 3000:3000
+      - 80:80
